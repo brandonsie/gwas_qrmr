@@ -2,7 +2,7 @@
 
 GWAS_QRMR provides an R plugin for [plink 1.9](https://www.cog-genomics.org/plink2/) to perform genome-wide [quantile regression](https://en.wikipedia.org/wiki/Quantile_regression) with quantitative trait data and a workflow for subsequent [meta-regression](https://en.wikipedia.org/wiki/Meta-regression). In contrast to normal mean linear regression, quantile regression can represent information about variants that exhibit non-homogenous effect sizes across different subsets of a population, a hallmark of [GxG](https://en.wikipedia.org/wiki/Epistasis) and [GxE](https://en.wikipedia.org/wiki/Gene%E2%80%93environment_interaction) interactions. In contrast to other interaction study approaches, QRMR requires no knowledge about the identity of the interacting feature. 
 
-For more information, check out this [slide deck](slides/QR_slides.html).
+For more information, check out this [slide deck](https://brandonsie.github.io/pages/QR_slides.html).
 
 ## Setup
 ### Required/Suggested Software
@@ -21,5 +21,7 @@ For more information, check out this [slide deck](slides/QR_slides.html).
   - plink + this r plugin will produce an output of 45 metrics from quantile regression for each snp. example downstream meta-regression based on this output is provided in `gwas_qrmr/metaregression/`
 
 ## Shiny App
+
+An example of significant non-homogenous effect sizes for BMI, height, and HbA1c is available at this [shiny app](https://brandonsie.shinyapps.io/QRMR_browser/)
 
 ## References
