@@ -1,0 +1,12 @@
+name: QRMR_browser
+title: QRMR_browser
+username:
+account: brandonsie
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2870903
+bundleId: 3668378
+url: https://brandonsie.shinyapps.io/QRMR_browser/
+when: 1600996839.63028
+asMultiple: FALSE
+asStatic: FALSE
