@@ -18,10 +18,12 @@ For more information, check out this [slide deck](https://brandonsie.github.io/p
 
 ### Execution
 - call `plink --R $path_to_function` with additional desired parameters. An example .sh + slurm sbatch configuration used on Harvard's [O2 cluster](https://wiki.rc.hms.harvard.edu/display/O2/O2) is provided in `gwas_qrmr/scripts/`
-  - plink + this r plugin will produce an output of 45 metrics from quantile regression for each snp. example downstream meta-regression based on this output is provided in `gwas_qrmr/metaregression/`
+  - plink + this r plugin will produce an output of 45 metrics from quantile regression for each snp. example downstream meta-regression based on this output is provided in `gwas_qrmr/metaregression/qrmr_example.Rmd` along with some fictional quantile regression data as input.
+  - real output summary statistic of uk biobank qrmr, filtered to variants with significant meta-regression p-value (b1 or b2) for bmi, height, and HbA1c provided in `gwas_qrmr/metaregression/qrmr_filtered_output/`.
 
 ## Shiny App
 
 An example of significant non-homogenous effect sizes for BMI, height, and HbA1c is available at this [shiny app](https://brandonsie.shinyapps.io/QRMR_browser/)
+
 
 ## References
